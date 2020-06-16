@@ -12,7 +12,7 @@ const forecast = (latitude, longtitude, callback) =>{
         }
         else {
             error = undefined;
-            data = 'it is currently ' + response.body.current.temperature + ' degree out. There is a ' + response.body.current.precip + '% of rain.'
+            data = 'it is currently ' + response.body.current.temperature + ' degree out. There is a ' + response.body.current.precip + '% chance of rain.'
         }
         callback(error, data)
     })
